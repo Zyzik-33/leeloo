@@ -1,0 +1,75 @@
+@import 'colors.scss';
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: $yellow;
+}
+
+.logo-box {
+  width: 25%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links a {
+  color: $medium;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: $medium;
+  margin: 5px;
+  border-radius: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 8vh;
+    background-color: $yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
