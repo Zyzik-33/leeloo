@@ -128,22 +128,22 @@ nav {
   height: 100%; }
 
 #slides .slide_1 {
-  background-image: url("https://images.pexels.com/photos/5286173/pexels-photo-5286173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://leelooweb.s3.us-east-2.amazonaws.com/slider/DSC07142-2.jpg");
   background-position: center;
   background-size: cover; }
 
 #slides .slide_2 {
-  background-image: url("https://images.pexels.com/photos/210979/pexels-photo-210979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://leelooweb.s3.us-east-2.amazonaws.com/slider/DSC04025.jpg");
   background-position: center;
   background-size: cover; }
 
 #slides .slide_3 {
-  background-image: url("https://images.pexels.com/photos/5286173/pexels-photo-5286173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://leelooweb.s3.us-east-2.amazonaws.com/slider/DSC04004.jpg");
   background-position: center;
   background-size: cover; }
 
 #slides .slide_4 {
-  background-image: url("https://images.pexels.com/photos/5286173/pexels-photo-5286173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://leelooweb.s3.us-east-2.amazonaws.com/slider/DSC03448.jpg");
   background-position: center;
   background-size: cover; }
 
@@ -213,11 +213,6 @@ nav {
   #slides {
     max-width: calc(100% - 140px);
     margin: 0 auto; } }
-
-.test {
-  background-image: url("https://images.pexels.com/photos/5286173/pexels-photo-5286173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-position: 50% 50%;
-  background-size: cover; }
 
 html {
   font-family: 'Heebo', sans-serif; }
