@@ -1,0 +1,34 @@
+@import "modules/colors";
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
+
+.social-footer {
+  padding: 1rem;
+  background-color: $yellow;
+  height: 13vh;
+
+  .simple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu>li {
+    margin: 1rem;
+  }
+  .social-footer-icons {
+    li:last-of-type {
+      margin-right: 0;
+    }
+
+    .fab {
+      font-size: 1.3rem;
+      color: $medium;
+
+      &:hover {
+        color: darken($brown, 25%);
+        transition: color 0.3s ease-in;
+      }
+    }
+  }
+}

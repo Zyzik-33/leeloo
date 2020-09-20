@@ -1,10 +1,18 @@
-const gulp = require("gulp");
-const sass = require("gulp-sass");
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+
 gulp.task('sass', function() {
-    return gulp.src('scss/style.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('css/style.css'));
-})
-gulp.task("watch", function(){
-    gulp.watch("scss/**/*.scss", gulp.series('sass'));
+    return gulp.src('scss/main.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            errLogToConsole: true,
+            outputStyle: 'expanded'
+        }))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('css'))
+});
+
+gulp.task('watch', function(){
+    gulp.watch('scss/**/*.scss', gulp.series('sass'));
 });

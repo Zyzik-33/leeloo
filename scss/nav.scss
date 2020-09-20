@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@import 'modules/colors';
 
 nav {
   display: flex;
@@ -63,6 +63,7 @@ nav {
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.5s cubic-bezier(0.88, 0.05, 0.18, 1);
+    z-index: 5;
   }
   .nav-links li {
     opacity: 0;
