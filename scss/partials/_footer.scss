@@ -1,12 +1,12 @@
-@import "modules/colors";
-@import "./fontawesome/scss/fontawesome.scss";
-@import "./fontawesome/scss/solid.scss";
-@import "./fontawesome/scss/brands.scss";
+@import "../modules/colors";
+@import "../../fontawesome/scss/fontawesome";
+@import "../../fontawesome/scss/solid";
+@import "../../fontawesome/scss/brands";
 
 .social-footer {
   padding: 1rem;
-  background-color: $yellow;
-  height: 13vh;
+  background-color: $new;
+  height: 12vh;
 
   .simple {
     display: flex;

@@ -1,11 +1,11 @@
-@import 'modules/colors';
+@import '../modules/colors';
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: $yellow;
+  background-color: $new;
 }
 
 .logo-box {
@@ -56,7 +56,7 @@ nav {
       right: 0;
       height: 92vh;
       top: 8vh;
-    background-color: $yellow;
+    background-color: $new;
     display: flex;
     flex-direction: column;
     align-items: center;
