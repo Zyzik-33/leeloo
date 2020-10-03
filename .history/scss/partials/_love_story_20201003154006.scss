@@ -78,9 +78,3 @@
         grid-template-columns: 1fr 1fr;
     }
 }
-
-@media screen and (max-width: 420px){
-    .image-gallery {
-        grid-template-columns: 1fr;
-    }
-}

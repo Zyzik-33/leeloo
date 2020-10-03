@@ -17,6 +17,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1.5rem;
+    // grid-template-areas: ;
 }
 
 .image-gallery a {
@@ -62,25 +63,16 @@
 }
 
 .an-el {
+    // grid-area: an-el;
     background-image: url(https://leelooweb.s3.us-east-2.amazonaws.com/love_story/prev/an_el.jpg);
 }
 
 .ir-sa {
+    // grid-area: ir-sa;
     background-image: url(https://leelooweb.s3.us-east-2.amazonaws.com/love_story/prev/ir_sa.jpg);
 }
 
 .ma-ka {
+    // grid-area: ma-ka;
     background-image: url(https://leelooweb.s3.us-east-2.amazonaws.com/love_story/prev/ma_ka.jpg);
-}
-
-@media screen and (max-width: 900px){
-    .image-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 420px){
-    .image-gallery {
-        grid-template-columns: 1fr;
-    }
 }

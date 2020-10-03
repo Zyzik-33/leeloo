@@ -1,0 +1,19 @@
+.love-body {
+    width: 100%;
+    height: 92vh;
+    background-color: #eee;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+.image-gellery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
