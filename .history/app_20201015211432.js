@@ -27,8 +27,6 @@ const imgModal = () => {
             original.classList.add('open');
             const originalSrc = preview.getAttribute('data-original');
             original.src = originalSrc;
-            const altText = preview.alt;
-            original.alt = altText;
         });
     });
 

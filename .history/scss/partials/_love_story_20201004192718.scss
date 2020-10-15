@@ -1,0 +1,90 @@
+.love-body {
+    width: 100%;
+    height: 92vh;
+    background-color: #eee;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+}
+
+.image-gallery a {
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.image-gallery a ion-icon {
+    color: rgba(255, 255, 255, .6);
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: .4rem;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.image-gallery a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: .8);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.image-gallery a:hover ion-icon,
+.image-gallery a:hover::before {
+    opacity: 1;
+}
+
+.image-gallery a:hover::after {
+    content: 'aga';
+}
+
+.an-el {
+    background-image: url(https://leelooweb.s3.us-east-2.amazonaws.com/love_story/prev/an_el.jpg);
+}
+
+.ir-sa {
+    background-image: url(https://leelooweb.s3.us-east-2.amazonaws.com/love_story/prev/ir_sa.jpg);
+}
+
+.ma-ka {
+    background-image: url(https://leelooweb.s3.us-east-2.amazonaws.com/love_story/prev/ma_ka.jpg);
+}
+
+@media screen and (max-width: 900px){
+    .image-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}

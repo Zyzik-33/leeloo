@@ -31,7 +31,6 @@
     height: 100%;
     opacity: 0;
     pointer-events: none;
-    transition: 0.25s ease-out;
 }
 
 .modal.open {
@@ -50,4 +49,13 @@
 
 .full-img.open {
     transform: translate(-50%, -50%) scale(1);
+}
+
+.modal p {
+    color: $fa-border-color;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
 }
